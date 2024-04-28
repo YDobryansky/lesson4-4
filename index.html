@@ -9,63 +9,46 @@
       integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU="
       crossorigin="anonymous"
     />
-   <style>
-a.anchor:link {
-  color: white;
-  background-color: black;
+    <style>
+      p.theory:first-letter {
+  font-size: 36px;
+  padding-left: 16px;
+  color: orange;
 }
 
-a.anchor:visited {
-  color: green;
-  background-color: orange;
-}
-
-a.anchor:active, button.some-button:active {
-  border: 3px solid red;
-}
-
-a.anchor:hover {
+p.theory:first-line {
   font-size: 24px;
 }
 
-button.some-button:disabled {
-  border: 2px dashed grey;
-  pointer-events: none;
-}
-
-button.some-button:not(:disabled):hover {
+p.theory::selection {
+  background-color: red;
   color: white;
-  background-color: grey;
 }
 
-input.search:focus {
-  background-color: orange;
+a::before {
+  content: ">";
+  color: green;
 }
 
-input.confirm-checkbox:checked {
-  margin-left: 20px;
+a::after {
+  content: "<";
+  color: green;
 }
+
 </style>
   </head>
 
   <body>
     <h1>Псевдоэлементы</h1>
+    <p class="theory">
+      Псевдоэлементы предоставляют способ сослаться на содержимое, которое не существует в исходном
+      документе.
+    </p>
 
-    <section>
-      <h2>Anchor - используются для ссылок</h2>
-      <a class="anchor" href="#">I am a link</a>
-    </section>
-
-    <section>
-      <h2>Пользовательские действия</h2>
-      <button class="some-button">Hover and click me</button>
-      <button disabled class="some-button">Disabled button</button>
-    </section>
-
-    <section>
-      <h2>Инпуты</h2>
-      <input type="text" class="search" />
-      <input type="checkbox" class="confirm-checkbox" />
-    </section>
+    <p>
+      Самым посещаемым сайтом на сегодняшний день является
+      <a href="https://www.google.com">google.com</a>. После него вторым идет
+      <a href="https://www.youtube.com">youtube.com</a>
+    </p>
   </body>
 </html>
