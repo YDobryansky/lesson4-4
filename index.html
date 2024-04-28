@@ -11,23 +11,27 @@
     />
     <link rel="stylesheet" type="text/css" href="selectors.css" />
     <style>
-      li {
-        margin-bottom: 16px;
-      }
+li {
+  margin-bottom: 16px;
+}
 
-     ol li {
-        background-color: green;
-        color: white;
-      }
+ol li {
+  background-color: green;
+  color: white;
+}
 
-     ul li {
-        background-color: orange;
-        color: white;
-      }
+ul li {
+  background-color: orange;
+  color: white;
+}
 
-      li#special + li {
-        margin-left: 16px;
-      }
+ul li span:contains('Antarctida') {
+  border: 3px solid red;
+}
+
+ul li#special ~ li {
+  padding-left: 16px;
+}
     </style>
  </head>
 
