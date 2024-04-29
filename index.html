@@ -10,38 +10,94 @@
       crossorigin="anonymous"
     />
     <style>
-      div.block {
-        background-color: coral;
-        margin: 8px;
+      body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        margin: 0;
       }
-.container {
-  display: flex;
-  flex-wrap: wrap;
-}
 
-.block {
-  background-color: coral;
-  margin: 8px;
-  height: 100px;
-  flex-grow: 1;
-  flex-basis: 100px;
-}
+      header {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 40px;
+        background-color: yellow;
+        padding-left: 16px;
+      }
+
+      header nav a {
+        margin-right: 16px;
+      }
+
+      main {
+        display: flex;
+        flex-grow: 1;
+      }
+
+      section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: pink;
+        flex-grow: 1;
+      }
+
+      aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: grey;
+        width: 200px;
+      }
+
+      aside h2 {
+        margin: 16px 0;
+      }
+
+      aside ul {
+        list-style: none;
+        padding: 0;
+        line-height: 40px;
+      }
+
+      aside ul li {
+        padding-left: 16px;
+      }
+
+      footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        background-color: green;
+      }
     </style>
   </head>
 
-  <body>
-    <div class="container">
-      <div class="block">1</div>
-      <div class="block">2</div>
-      <div class="block">3</div>
-      <div class="block">4</div>
-      <div class="block">5</div>
-      <div class="block">6</div>
-      <div class="block">7</div>
-      <div class="block">8</div>
-      <div class="block">9</div>
-      <div class="block">10</div>
-      <div class="block">11</div>
-    </div>
+ <body>
+    <header>
+      <nav>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>I can use Flexbox!!!</h2>
+      </section>
+      <aside>
+        <h2>News</h2>
+        <ul>
+          <li>News 1</li>
+          <li>News 2</li>
+          <li>News 3</li>
+        </ul>
+      </aside>
+    </main>
+    <footer>
+      Footer
+    </footer>
   </body>
 </html>
